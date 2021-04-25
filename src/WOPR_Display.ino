@@ -5,7 +5,13 @@
  * Date:
  */
 
-#include <Adafruit_LEDBackpack.h>
+#include <Adafruit_GFX.h>
+#include <adafruit-led-backpack.h>
+#include <HTU21D.h>
+#include <SparkFun_VCNL4040_Arduino_Library.h>
+
+
+const uint8_t VCNL4040_ADDR = 0x60; //7-bit unshifted I2C address of VCNL4040
 
 // setup() runs once, when the device is first turned on.
 void setup() {
